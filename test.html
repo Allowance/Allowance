@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/flipclock.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script src="js/flipclock.js"></script>    
+    </head>
+    <body>
+        Hello!
+        
+        <script type="text/javascript">
+            var url = "https://api.parse.com/1/functions/getTotalAvailableMoney";
+            var params = "receiverId=Ella&lat=50.986918&lon=-10.942554";
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url, true);
+
+            //Send the proper header information along with the request
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.setRequestHeader("Content-type", "application/json");
+
+            xhr.send(params);
+        </script>
+        
+    </body>
+</html>
